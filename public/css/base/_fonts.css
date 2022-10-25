@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Arial";
+  font-display: swap;
+  src: url("../fonts/Arial-Regular.woff2") format("woff2"),
+        url("../fonts/Arial-Regular.woff2") format("woff"),
+        url("../fonts/Arial-Regular.ttf") format("ttf"),
+        url("../fonts/Arial-Regular.eot") format("eot");
+  font-weight: 400;
+  font-style: normal;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhc2UvX2ZvbnRzLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG9CQUFvQjtFQUNwQixrQkFBa0I7RUFDbEI7Ozt1REFHcUQ7RUFDckQsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQiIsImZpbGUiOiJiYXNlL19mb250cy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAZm9udC1mYWNlIHtcclxuICBmb250LWZhbWlseTogXCJBcmlhbFwiO1xyXG4gIGZvbnQtZGlzcGxheTogc3dhcDtcclxuICBzcmM6IHVybChcIi4uL2ZvbnRzL0FyaWFsLVJlZ3VsYXIud29mZjJcIikgZm9ybWF0KFwid29mZjJcIiksXHJcbiAgICAgICAgdXJsKFwiLi4vZm9udHMvQXJpYWwtUmVndWxhci53b2ZmMlwiKSBmb3JtYXQoXCJ3b2ZmXCIpLFxyXG4gICAgICAgIHVybChcIi4uL2ZvbnRzL0FyaWFsLVJlZ3VsYXIudHRmXCIpIGZvcm1hdChcInR0ZlwiKSxcclxuICAgICAgICB1cmwoXCIuLi9mb250cy9BcmlhbC1SZWd1bGFyLmVvdFwiKSBmb3JtYXQoXCJlb3RcIik7XHJcbiAgZm9udC13ZWlnaHQ6IDQwMDtcclxuICBmb250LXN0eWxlOiBub3JtYWw7XHJcbn0iXX0= */

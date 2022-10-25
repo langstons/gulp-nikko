@@ -12,15 +12,15 @@ export default {
   },
 
   css: {
-    src: [pathSrc + "/styles/css/**/*.css", pathSrc + "/components/**/*.css"],
+    src: pathSrc + "/styles/css/**/*.css",
     libs: pathSrc + "/styles/libs/**/*.css",
-    watch: [pathSrc + "/styles/css/**/*.css", pathSrc + "/components/**/*.css"],
+    watch: pathSrc + "/styles/css/**/*.css",
     dest: pathDest + "/css"
   },
 
   scss: {
     src: pathSrc + "/styles/scss/main.{scss,sass}",
-    watch: [pathSrc + "/styles/scss/**/*.{scss,sass}", pathSrc + "/components/**/*.{scss,sass}"],
+    watch: pathSrc + "/styles/scss/**/*.{scss,sass}",
     dest: pathDest + "/css"
   },
 

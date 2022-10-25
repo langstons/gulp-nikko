@@ -1,0 +1,28 @@
+:root {
+/*
+ * Media queries variables =====>
+ */
+--media-query-xxl: 1440px;
+--media-query-xl: 1280px;
+--media-query-lg: 992px;
+--media-query-md: 768px;
+--media-query-sm: 576px;
+--media-query-xs: 380px;
+
+/*
+ * Color's variables =====>
+ */
+--color-white: #ffffff;
+--color-black: #000000;
+--color-background: #ffffff;
+/*
+ * Color's variables =====>
+ */
+--font-arial: 'Arial', sans-serif;
+/*
+ * Transition's variables =====>
+ */
+--transition-low: all 0.15s ease-in-out;
+--transition-normal: all 0.3s ease-in-out;
+--transition-high: all 0.6s ease-in-out;
+}

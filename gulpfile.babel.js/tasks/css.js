@@ -9,7 +9,6 @@ import plumber from "gulp-plumber"
 import notify from "gulp-notify"
 import size from "gulp-size"
 import concat from "gulp-concat"
-import cssimport from "gulp-cssimport"
 import autoprefixer from "gulp-autoprefixer"
 import csso from "gulp-csso"
 import rename from "gulp-rename"
@@ -29,8 +28,6 @@ export default () => {
         message: error.message
       }))
     }))
-    .pipe(concat("main.css"))
-    .pipe(cssimport())
     .pipe(autoprefixer())
     .pipe(shorthand())
     .pipe(groupCssMediaQueries())

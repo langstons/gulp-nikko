@@ -1,13 +1,18 @@
-:root {
-  /* Color's */
+/*
+ * Import "Helpers" folder =====>
+ */
+@import "../css/helpers/_variables.css";
+@import "../css/helpers/_mixins.css";
 
-  --color-white: #ffffff;
-  --color-black: #000000;
-  --color-background: #000000;
+/*
+ * Import "Base" folder =====>
+ */
+@import "../css/base/_fonts.css";
+@import "../css/base/_normalize.css";
+@import "../css/base/_global.css";
 
-  /* Transition's */
-  
-  --transition-low: 0.15s ease-in-out;
-  --transition-normal: 0.3s ease-in-out;
-  --transition-high: 0.6s ease-in-out;
-}
+/*
+ * Import "Components" folder =====>
+ */
+@import "../css/components/_header.css";
+@import "../css/components/_footer.css";
