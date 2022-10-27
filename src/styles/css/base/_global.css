@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font-arial);
+  font-family: var(--font-montserrat);
   background-color: var(--color-background);
 }
 
@@ -45,5 +45,33 @@ button {
 	max-width: 1440px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 64px;
+}
+
+.site-title {
+	background: linear-gradient(91.87deg, #C0DED4 0%, #49A3BB 50.2%, #13455A 99.77%), #FFFFFF;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: var(--text-title);
+	font-weight: 700;
+	line-height: 1.0531;
+	letter-spacing: var(--letter-spacing-normal);
+}
+
+/*
+ * Media 1170px =====>
+ */
+@media screen and (max-width: 1170px) {
+	.container {
+		padding: 0 24px;
+	}
+}
+
+/*
+ * Media 767px =====>
+ */
+@media screen and (max-width: 767px) {
+	.container {
+		padding: 0 16px;
+	}
 }

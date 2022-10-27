@@ -15,37 +15,37 @@ export default {
     src: pathSrc + "/styles/css/**/*.css",
     libs: pathSrc + "/styles/libs/**/*.css",
     watch: pathSrc + "/styles/css/**/*.css",
-    dest: pathDest + "/css"
+    dest: pathDest + "/assets/css"
   },
 
   scss: {
     src: pathSrc + "/styles/scss/main.{scss,sass}",
     watch: pathSrc + "/styles/scss/**/*.{scss,sass}",
-    dest: pathDest + "/css"
+    dest: pathDest + "/assets/css"
   },
 
   javascript: {
     src: pathSrc + "/js/main.js",
     libs: pathSrc + "/js/libs/**/*.js",
     watch: [pathSrc + "/js/**/*.js", pathSrc + "/components/**/*.js"],
-    dest: pathDest + "/js"
+    dest: pathDest + "/assets/js"
   },
 
   img: {
     src: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg,ico}",
     watch: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg,ico}",
-    dest: pathDest + "/img"
+    dest: pathDest + "/assets/img"
   },
 
   sprite: {
     src: pathSrc + "/img/icons/**/*.svg",
     watch: pathSrc + "/img/icons/**/*.svg",
-    dest: pathDest + "/img"
+    dest: pathDest + "/assets/img"
   },
 
   fonts: {
     src: pathSrc + "/fonts/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}",
     watch: pathSrc + "/fonts/**/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}",
-    dest: pathDest + "/fonts"
+    dest: pathDest + "/assets/fonts"
   },
 }

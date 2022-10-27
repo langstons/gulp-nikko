@@ -1,0 +1,84 @@
+.header-interactions-button {
+  background: var(--color-grey-light);
+  padding: 8px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  border-radius: var(--rounded-3xl);
+  -webkit-transition: var(--transition-normal);
+  -o-transition: var(--transition-normal);
+  transition: var(--transition-normal);
+}
+
+.header-interactions-button__title {
+  margin: 0 0 2px;
+  color: var(--color-turquoise-darker);
+  font-size: var(--text-base);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: var(--letter-spacing-normal);
+  -webkit-transition: var(--transition-normal);
+  -o-transition: var(--transition-normal);
+  transition: var(--transition-normal);
+}
+
+.header-interactions-button__subtitle {
+  color: var(--color-turquoise-light);
+  font-size: var(--text-2xs);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: var(--letter-spacing-normal);
+  -webkit-transition: var(--transition-normal);
+  -o-transition: var(--transition-normal);
+  transition: var(--transition-normal);
+}
+
+/* Styles on hover =====> */
+
+.header-interactions-button:hover {
+  background: var(--color-turquoise-light);
+}
+
+.header-interactions-button:hover .header-interactions-button__title,
+.header-interactions-button:hover .header-interactions-button__subtitle {
+  color: var(--color-white);
+}
+
+/*
+ * Media 1024px =====>
+ */
+
+@media screen and (max-width: 1024px) {
+  .header-interactions-button {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .header-interactions-button__icon {
+    fill: var(--color-turquoise-darker);
+    max-width: 24px;
+    min-width: 24px;
+    max-height: 24px;
+    min-height: 24px;
+  }
+
+  /* Styles on hover =====> */
+
+  .header-interactions-button:hover {
+    background-color: transparent;
+  }
+}

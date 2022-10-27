@@ -1,0 +1,46 @@
+.base-button {
+    padding: 13px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: var(--text-base);
+    font-weight: 600;
+    line-height: 1.25;
+    background-color: var(--color-turquoise-light);
+    border: 1px solid var(--color-turquoise-light);
+    border-radius: var(--rounded-3xl);
+    transition: var(--transition-normal);
+}
+
+/* Styles on interactions =====> */
+.base-button:hover {
+    background-color: var(--color-turquoise-lighter);
+    border-color: var(--color-turquoise-lighter);
+}
+
+.base-button:active {
+    background-color: var(--color-turquoise-dark);
+    border-color: var(--color-turquoise-dark);
+}
+
+.base-button:disabled {
+    pointer-events: visible;
+    color: var(--color-grey-dark);
+    background-color: var(--color-grey-normal);
+    border-color: var(--color-grey-normal);
+}
+
+.base-button.base-button_disabled {
+    pointer-events: none;
+    color: var(--color-grey-dark);
+    background-color: var(--color-grey-normal);
+    border-color: var(--color-grey-normal);
+}
+
+/* Base button outlined =====> */
+.base-button_outline {
+    background-color: transparent;
+}

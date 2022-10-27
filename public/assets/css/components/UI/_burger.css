@@ -1,0 +1,134 @@
+.burger {
+  background: var(--color-turquoise-darker);
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 48px;
+  min-width: 48px;
+  max-height: 48px;
+  min-height: 48px;
+  border-radius: var(--rounded-full);
+  -webkit-transition: var(--transition-normal);
+  -o-transition: var(--transition-normal);
+  transition: var(--transition-normal);
+}
+
+.burger::before,
+.burger::after {
+  background: var(--color-white);
+  content: '';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: calc(100% - 30px);
+  height: 2px;
+  border-radius: var(--rounded-full);
+  -webkit-transition: var(--transition-normal);
+  -o-transition: var(--transition-normal);
+  transition: var(--transition-normal);
+}
+
+.burger::before {
+  top: 16px;
+}
+
+.burger::after {
+  top: 30px;
+}
+
+.burger__line {
+  background: var(--color-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: calc(100% - 30px);
+  height: 2px;
+  border-radius: var(--rounded-full);
+  -webkit-transition: var(--transition-normal);
+  -o-transition: var(--transition-normal);
+  transition: var(--transition-normal);
+}
+
+/* Styles on hover =====> */
+
+.burger:hover {
+  background: var(--color-turquoise-light);
+}
+
+/* Active styles on click =====> */
+
+.burger.js-active {
+  background: var(--color-grey-lighter);
+}
+
+.burger.js-active::before,
+.burger.js-active::after {
+  background: var(--color-turquoise-darker);
+}
+
+.burger.js-active::before {
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.burger.js-active::after {
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.burger.js-active .burger__line {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*
+ * Media 1024px =====>
+ */
+
+@media screen and (max-width: 1024px) {
+  .burger {
+    background-color: transparent;
+    max-width: 24px;
+    min-width: 24px;
+    max-height: 24px;
+    min-height: 24px;
+  }
+
+  .burger__line {
+    background-color: var(--color-turquoise-darker);
+    width: calc(100% - 6px);
+  }
+
+  .burger::before {
+    width: calc(100% - 6px);
+    top: 5px;
+    background-color: var(--color-turquoise-darker);
+  }
+
+  .burger::after {
+    width: calc(100% - 6px);
+    top: 17px;
+    background-color: var(--color-turquoise-darker);
+  }
+
+  /* Styles on hover =====> */
+
+  .burger:hover {
+    background-color: transparent;
+  }
+
+  /* Active styles on click =====> */
+
+  .burger.js-active {
+    background-color: transparent;
+  }
+}

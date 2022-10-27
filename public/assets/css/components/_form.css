@@ -1,0 +1,101 @@
+.form {
+  background: var(--color-white);
+  padding: 40px 48px;
+  border-radius: var(--rounded-4xl);
+}
+
+.form__title {
+  margin: 0 0 24px;
+  text-align: center;
+  color: var(--color-turquoise-darker);
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.143;
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+.form__title.form__title_gradient {
+  background: -o-linear-gradient(357.18deg, #49A3BB 5.06%, #13455A 79.46%);
+  background: linear-gradient(92.82deg, #49A3BB 5.06%, #13455A 79.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-field {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.form-field:not(:last-of-type) {
+  margin: 0 0 16px;
+}
+
+.form-field__input {
+  background: var(--color-grey-light);
+  margin: 0;
+  padding: 17px 16px;
+  outline: none;
+  width: 100%;
+  color: var(--color-turquoise-darker);
+  font-size: var(--text-base);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: var(--letter-spacing-normal);
+  border: 1px solid var(--color-grey-dark);
+  border-radius: var(--rounded-3xs);
+  -webkit-transition: var(--transition-normal);
+  -o-transition: var(--transition-normal);
+  transition: var(--transition-normal);
+}
+
+.form-field__placeholder {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: text;
+  color: var(--color-turquoise-darker);
+  font-size: var(--text-base);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+/* Styles on interactions =====> */
+
+.form-field:hover .form-field__input {
+  border-color: var(--color-turquoise-darker);
+}
+
+.form .base-button {
+  margin: 24px 0 0;
+  width: 100%;
+}
+
+.form__policy {
+  margin: 16px 0 0;
+  text-align: center;
+  color: var(--color-grey-dark);
+  font-size: var(--text-xs);
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+.form__link {
+  color: var(--color-turquoise-darker);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  line-height: 1.334;
+  letter-spacing: var(--letter-spacing-normal);
+}

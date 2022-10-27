@@ -8,30 +8,462 @@
 	<title>langston-gulp-starter</title>
 
 	<!-- Import Style's -->
-	<link rel="stylesheet" href="./css/main.min.css">
-	<link rel="stylesheet" href="./css/vendor.min.css">
+	<link rel="stylesheet" href="./assets/css/main.min.css">
+	<link rel="stylesheet" href="./assets/css/vendor.min.css">
 </head>
-<body>
+<body class="home-page">
 
 <!-- Header -->
 <header class="header">
-  <div class="container">
+	<div class="header__content">
+		<div class="container">
+			<div class="header-interactions">
+				<div class="header-interactions__item lg-visible">
+					<button class="burger">
+						<span class="burger__line"></span>
+					</button>
+				</div>
+				<div class="header-interactions__item">
+					<a href="/" class="header-interactions-button">
+					<span class="header-interactions-button__title">
+						Nikko Off
+					</span>
+						<span class="header-interactions-button__subtitle">
+						в салонах
+					</span>
+					</a>
+				</div>
+				<div class="header-interactions__item">
+					<a href="/" class="header-interactions-button">
+					<span class="header-interactions-button__title">
+						Nikko Home
+					</span>
+						<span class="header-interactions-button__subtitle">
+						с доставкой
+					</span>
+					</a>
+				</div>
+				<div class="header-interactions__item desktop-hidden lg-visible">
+					<a href="tel:+79255086676" class="header-interactions-button">
+						<svg class="header-interactions-button__icon">
+							<use xlink:href="/assets/img/sprite.svg#phone"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<a href="/" class="logo">
+				<img src="./assets/img/logo.svg" alt="Logo of Nikko" class="logo__image">
+			</a>
+			<div class="header-interactions">
+				<div class="header-interactions__item">
+					<a href="tel:+79255086676" class="header-interactions-button">
+						<span class="header-interactions-button__title">
+							+7 (925) 508-66-76
+						</span>
+							<span class="header-interactions-button__subtitle">
+							с 09:00 до 18:00
+						</span>
+					</a>
+				</div>
 
-  </div>
+				<!-- show when user is not logged in system -->
+				<div class="header-interactions__item lg-visible">
+					<button class="user-trigger">
+						<svg class="user-trigger__icon">
+							<use xlink:href="/assets/img/sprite.svg#login"></use>
+						</svg>
+						<span class="user-trigger__text">
+							Войти
+						</span>
+					</button>
+				</div>
+				<!-- show when user is logged in system -->
+<!--				<div style="display: none" class="header-interactions__item user dropdown lg-visible">-->
+<!--					<button class="user-trigger dropdown__trigger">-->
+<!--						<svg class="user-trigger__icon">-->
+<!--							<use xlink:href="/assets/img/sprite.svg#user-circle"></use>-->
+<!--						</svg>-->
+<!--						<span class="user-trigger__text">-->
+<!--						Кабинет-->
+<!--					</span>-->
+<!--					</button>-->
+<!--					<div class="user-interactions dropdown__item">-->
+<!--						<ul class="user-interactions__list">-->
+<!--							<li class="user-interactions__item">-->
+<!--								<a href="/" class="user-interactions__link">-->
+<!--									Сделать заказ-->
+<!--								</a>-->
+<!--							</li>-->
+<!--							<li class="user-interactions__item">-->
+<!--								<a href="/" class="user-interactions__link">-->
+<!--									Личные данные-->
+<!--								</a>-->
+<!--							</li>-->
+<!--							<li class="user-interactions__item">-->
+<!--								<a href="/" class="user-interactions__link">-->
+<!--									Мои заказы-->
+<!--								</a>-->
+<!--							</li>-->
+<!--							<li class="user-interactions__item">-->
+<!--								<a href="/" class="user-interactions__link">-->
+<!--									Бонусы-->
+<!--								</a>-->
+<!--							</li>-->
+<!--							<li class="user-interactions__item">-->
+<!--								<a href="/" class="user-interactions__link user-interactions__link_logout">-->
+<!--									<svg class="user-interactions__icon">-->
+<!--										<use xlink:href="/assets/img/sprite.svg#logout"></use>-->
+<!--									</svg>-->
+<!--									Выйти-->
+<!--								</a>-->
+<!--							</li>-->
+<!--						</ul>-->
+<!--					</div>-->
+<!--				</div>-->
+			</div>
+		</div>
+	</div>
+	<nav class="nav">
+		<div class="container">
+			<div class="nav__table">
+				<div class="nav__wrapper">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="/" class="nav__link">
+								О нас
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="/" class="nav__link">
+								Услуги и цены
+							</a>
+						</li>
+						<li class="nav__item">
+							<a href="/" class="nav__link">
+								Акции и новости
+							</a>
+						</li>
+						<li class="nav__item lg-visible">
+							<a href="/" class="nav__link">
+								Nikko OFF
+							</a>
+						</li>
+						<li class="nav__item lg-visible">
+							<a href="/" class="nav__link">
+								Nikko Home
+							</a>
+						</li>
+					</ul>
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="/" class="nav__link">
+								Личный кабинет
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav__wrapper">
+					<ul class="nav-contacts">
+						<li class="nav-contacts__item">
+							<div class="nav-contacts__title">
+								Nikko Home
+							</div>
+							<a href="tel:+79257403165" class="nav__link">
+								+7 (925) 740-31-65
+							</a>
+							<span class="nav-contacts__date">
+								с 08:30 до 21:30
+							</span>
+						</li>
+						<li class="nav-contacts__item">
+							<div class="nav-contacts__title">
+								Nikko Off
+							</div>
+							<a href="tel:+79255086676" class="nav__link">
+								+7 (925) 508-66-76
+							</a>
+							<span class="nav-contacts__date">
+								с 09:00 до 18:00
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="nav__wrapper">
+					<div class="nav__title">
+						Nikko App
+					</div>
+					<ul class="social">
+						<li class="social__item">
+							<a href="/" class="social-link social-link_ios">
+								<svg class="social-link__icon">
+									<use xlink:href="/assets/img/sprite.svg#apple"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="/" class="social-link">
+								<svg class="social-link__icon">
+									<use xlink:href="/assets/img/sprite.svg#android"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
 </header>
 <main>
-
+	<!-- Hero -->
+	<section class="hero">
+	<div class="ticker">
+		<ul class="ticker__list">
+			<li class="ticker__item">
+				ВРЕМЯ УНИКАЛЬНЫХ
+			</li>
+			<li class="ticker__item">
+				Cохраняем ваше время и вещи
+			</li>
+			<li class="ticker__item">
+				ВРЕМЯ УНИКАЛЬНЫХ
+			</li>
+			<li class="ticker__item">
+				Cохраняем ваше время и вещи
+			</li>
+			<li class="ticker__item">
+				ВРЕМЯ УНИКАЛЬНЫХ
+			</li>
+			<li class="ticker__item">
+				Cохраняем ваше время и вещи
+			</li>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="hero__text">
+			<h1 class="site-title">
+				Cохраняем ваше время и вещи
+			</h1>
+			<div class="hero__subtitle">
+				Химчистка<br>
+				для уникальных<br>
+				людей
+			</div>
+		</div>
+		<a href="/" class="hero-btn">
+			<div class="hero-btn__image">
+				<img src="./assets/img/circle.svg" alt="">
+			</div>
+			<div class="hero-btn__text">
+				Узнать<br>
+				цены
+			</div>
+		</a>
+	</div>
+</section>
+	<!-- Stock -->
+	<section class="stock">
+	<div class="container">
+		<div class="stock__table">
+			<div class="stock__wrapper">
+				<a href="/" class="stock-banner">
+					<div class="stock-banner__title">
+						Все акции<br>
+						и предложения
+					</div>
+					<div class="base-button base-button_outline">
+						Подробнее
+					</div>
+					<div class="stock-banner__image">
+						<img src="./assets/img/home-stock-banner.png" alt="">
+					</div>
+				</a>
+			</div>
+			<div class="stock__wrapper">
+				<form action="" class="form">
+					<h3 class="form__title form__title_gradient">
+						Закажите химчистку с доставкой
+					</h3>
+					<label class="form-field">
+						<span class="form-field__placeholder">
+							Ваше имя
+						</span>
+						<input type="text" class="form-field__input">
+					</label>
+					<label class="form-field">
+						<span class="form-field__placeholder">
+							Телефон
+						</span>
+						<input type="text" class="form-field__input">
+					</label>
+					<button type="submit" class="base-button">
+						Заказать
+					</button>
+					<p class="form__policy">
+						Нажимая на кнопку «Заказать», вы даёте своё согласие на обработку персональных данных согласно
+						<a href="/" class="form__link">
+							политике конфиденциальности
+						</a>
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+	<!-- Banner -->
+	<section class="banner">
+	<div class="container">
+		<div class="banner__wrapper">
+			<div class="banner__content">
+				<h2 class="banner__title">
+					Скачайте наше<br>
+					мобильное<br>
+					приложение
+				</h2>
+				<div class="banner-interactions">
+					<div class="banner-interactions__item">
+						<a href="/" class="base-button base-button_outline">
+							Подробнее
+						</a>
+					</div>
+					<div class="banner-interactions__item">
+						<ul class="social">
+							<li class="social__item">
+								<a href="/" class="social-link social-link_ios">
+									<svg class="social-link__icon">
+										<use xlink:href="/assets/img/sprite.svg#apple"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="/" class="social-link">
+									<svg class="social-link__icon">
+										<use xlink:href="/assets/img/sprite.svg#android"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="banner__image">
+				<img src="./assets/img/home-banner.png" alt="">
+				<img src="./assets/img/home-banner-lg.png" alt="" class="lg-visible">
+				<img src="./assets/img/home-banner-sm.png" alt="" class="sm-visible">
+			</div>
+		</div>
+	</div>
+</section>
 </main>
 
 <!-- Footer -->
 <footer class="footer">
-  <div class="container">
-    
-  </div>
+	<div class="container">
+		<div class="footer__content">
+			<a href="/" class="logo">
+				<img src="./assets/img/logo-small.svg" alt="Logo of Nikko" class="logo__image">
+				<span class="logo__text">
+					Химчистка<br>
+					для уникальных<br>
+					людей
+				</span>
+			</a>
+			<div class="footer__table">
+				<div class="footer__wrapper">
+					<ul class="footer__list">
+						<li class="footer__item">
+							<a href="/" class="footer__link">
+								О нас
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="/" class="footer__link">
+								Услуги и цены
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="/" class="footer__link">
+								Акции и новости
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="/" class="footer__link">
+								Nikko OFF
+							</a>
+						</li>
+						<li class="footer__item">
+							<a href="/" class="footer__link">
+								Nikko Home
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__wrapper">
+					<ul class="footer-contacts">
+						<li class="footer-contacts__item">
+							<div class="footer-contacts__title">
+								Nikko Home
+							</div>
+							<a href="tel:+79257403165" class="footer__link">
+								+7 (925) 740-31-65
+							</a>
+							<span class="footer-contacts__date">
+								с 08:30 до 21:30
+							</span>
+						</li>
+						<li class="footer-contacts__item">
+							<div class="footer-contacts__title">
+								Nikko Off
+							</div>
+							<a href="tel:+79255086676" class="footer__link">
+								+7 (925) 508-66-76
+							</a>
+							<span class="footer-contacts__date">
+								с 09:00 до 18:00
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-promo">
+			<div class="footer-promo__image">
+				<img src="./assets/img/footer-phone.png" alt="">
+			</div>
+			<div class="footer-promo__content">
+				<div class="footer-promo__title">
+					Скачайте мобильное приложение Nikko
+				</div>
+				<ul class="social">
+					<li class="social__item">
+						<a href="/" class="social-link social-link_ios">
+							<svg class="social-link__icon">
+								<use xlink:href="/assets/img/sprite.svg#apple"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="/" class="social-link">
+							<svg class="social-link__icon">
+								<use xlink:href="/assets/img/sprite.svg#android"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-info">
+			<div class="footer-info__item">
+				© 2015 – 2025 | Nikko. Все права защищены
+			</div>
+			<a href="/" class="footer-info__item footer-info__item_link">
+				Политика конфиденциальности
+			</a>
+		</div>
+	</div>
 </footer>
 
 <!-- Import Script's -->
-<script src="./js/main.min.js"></script>
-<script src="./js/vendor.min.js"></script>
+<script src="./assets/js/main.min.js"></script>
+<script src="./assets/js/vendor.min.js"></script>
 </body>
 </html>

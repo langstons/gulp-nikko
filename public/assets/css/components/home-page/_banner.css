@@ -1,0 +1,148 @@
+.banner {
+  padding: 80px 0;
+}
+
+.banner__wrapper {
+  padding: 112px;
+  position: relative;
+  overflow: hidden;
+  background: var(--gradient-base);
+  border-radius: var(--rounded-4xl);
+}
+
+.banner__content {
+  z-index: 1;
+  position: relative;
+}
+
+.banner__title {
+  margin: 0 0 32px;
+  color: var(--color-white);
+  font-size: var(--text-5xl);
+  font-weight: 700;
+  line-height: 1.125;
+}
+
+.banner-interactions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.banner-interactions__item:not(:last-child) {
+  margin: 0 16px 0 0;
+}
+
+.banner__image {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.banner__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner__image img.lg-visible,
+.banner__image img.sm-visible {
+  display: none;
+}
+
+/*
+ * Media 1170px =====>
+ */
+
+/*
+ * Media 1024px =====>
+ */
+
+/*
+ * Media 576px =====>
+ */
+
+/*
+ * Media 359px =====>
+ */
+
+@media screen and (max-width: 1170px) {
+  .banner__wrapper {
+    padding: 86px 48px;
+  }
+
+  .banner__title {
+    font-size: var(--text-3xl);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner__wrapper {
+    border-radius: var(--rounded-2xl);
+  }
+
+  .banner__image img {
+    display: none;
+  }
+
+  .banner__image img.lg-visible {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner__wrapper {
+    padding: 0;
+  }
+
+  .banner__content {
+    padding: 32px 24px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .banner__title {
+    text-align: center;
+  }
+
+  .banner__image {
+    position: relative;
+  }
+
+  .banner__image img.lg-visible {
+    display: none;
+  }
+
+  .banner__image img.sm-visible {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .banner-interactions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .banner-interactions__item:not(:last-child) {
+    margin: 0 0 16px;
+  }
+}

@@ -12,7 +12,23 @@
 @import "../css/base/_global.css";
 
 /*
+ * Import "UI" from "Components" folder =====>
+ */
+@import "../css/components/UI/_dropdown.css";
+@import "../css/components/UI/_burger.css";
+@import "../css/components/UI/_header-interactions-button.css";
+@import "../css/components/UI/_user.css";
+@import "../css/components/UI/_base-button.css";
+
+/*
  * Import "Components" folder =====>
  */
 @import "../css/components/_header.css";
 @import "../css/components/_footer.css";
+@import "../css/components/_nav.css";
+@import "../css/components/_ticker.css";
+@import "../css/components/_form.css";
+
+@import "../css/components/home-page/_hero.css";
+@import "../css/components/home-page/_stock.css";
+@import "../css/components/home-page/_banner.css";
